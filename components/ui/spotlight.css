@@ -1,0 +1,15 @@
+@keyframes spotlight-animation {
+    0% {
+      opacity: 0;
+      transform: translate(50%, -50%) scale(0.5); /* Start from the top-right corner */
+    }
+    100% {
+      opacity: 1;
+      transform: translate(50%, -50%) scale(1); /* Adjusted to bring exactly to the center */
+    }
+  }
+  
+  .animate-custom-spotlight {
+    animation: spotlight-animation 2s ease-in-out forwards;
+  }
+  
