@@ -25,7 +25,7 @@ export function Navbar({ className }: { className?: string }) {
                         <HoveredLink href="/gallery">Gallery</HoveredLink>
                     </div>
                 </MenuItem>
-                <HoveredLink href="/gallery">Gallery</HoveredLink>
+                <HoveredLink href="/contact">Contact</HoveredLink>
             </Menu>
         </div>
     );

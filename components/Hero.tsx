@@ -16,28 +16,41 @@ const Hero = () => {
         <CustomSpotlight className="top-0 right-0 h-[80vh] w-[50vw]" fill="white" />
       </div>
 
-      <div className='flex justify-center relative my-20 z-6'>
-        <div className=' flex-col items-center justify-center'>
+      <div className="relative flex flex-col items-center mt-20">
+        {/* Main Content */}
+        <div className="flex flex-col items-center justify-center z-10">
           <Cover>
             <div className="text-6xl text-center leading-snug tracking-wide font-bold text-pink-300">
-            Cultural Society of Silicon
+              Cultural Society of Silicon
             </div>
           </Cover>
 
           <TextGenerateEffect
-            className='uppercase tracking-widest text-center text-blue-100 py-2'
-            words='Unleash Your Passion, Embrace the Spotlight'
+            className="uppercase tracking-widest text-center text-blue-100 py-2"
+            words="Unleash Your Passion, Embrace the Spotlight"
           />
-          <a href="about" className="flex justify-center items-center">
+          <a href="register" className="flex justify-center items-center w-full">
             <MagicButton
-              title="Show more about us"
+              title="Register"
               icon={<GiGuitar size={32} color="#620aa6" />}
               position="right"
-              handleClick={() => console.log('Button clicked!')}
+              handleClick={() => console.log("Button clicked!")}
               otherClasses="my-custom-class"
             />
           </a>
         </div>
+      </div>
+      <div className="absolute inset-0 flex flex-row justify-center items-center z-0">
+        {/* <img
+          src="/guitar.gif"
+          alt="Guitar GIF"
+          className="h-40 opacity-30"
+        /> */}
+        <img
+          src="/theatre.gif"
+          alt="Theatre GIF"
+          className="w-3/5 opacity-30"
+        />
       </div>
     </div>
   )
