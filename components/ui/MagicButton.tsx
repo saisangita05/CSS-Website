@@ -2,8 +2,8 @@ import React from 'react';
 
 type MagicButtonProps = {
     title: string;
-    icon: React.ReactNode;
-    position: 'left' | 'right';
+    icon?: React.ReactNode;
+    position?: 'left' | 'right';
     handleClick?: () => void;
     otherClasses?: string;
 };
@@ -34,6 +34,7 @@ const MagicButton: React.FC<MagicButtonProps> = ({
                 style={{
                     animation: 'shimmer 2s linear infinite',
                 }}
+                onClick={handleClick}
             >
                 {position === 'left' && icon}
                 <span className="mx-2">{title}</span>

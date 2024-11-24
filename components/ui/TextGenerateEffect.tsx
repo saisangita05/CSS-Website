@@ -60,7 +60,7 @@ export const TextGenerateEffect = ({
     return (
         <div className={cn("font-bold", className)}>
             <div className="my-4">
-                <div className={`${wordsArray[0] === "Unleash" ? 'text-1xl' : 'text-6xl'} dark:text-white text-black leading-snug tracking-wide font-bold`}>
+                <div className={"text-3xl dark:text-white text-black leading-snug tracking-wide font-bold"}>
                     {renderWords()}
                 </div>
             </div>
