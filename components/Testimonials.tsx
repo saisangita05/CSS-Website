@@ -5,21 +5,28 @@ import { InfiniteMovingCards } from "./ui/InifiniteMovingCards";
 
 export function Testimonials() {
     return (
-        <div className="pb-20">
-            <div className="text-center mb-12">
+        <>
+            <div className="text-center">
                 <p className="text-4xl font-bold text-white mb-4">Testimonials</p>
                 <p className="text-neutral-400 text-lg">
                     Here’s what they’re saying about us.
                 </p>
             </div>
-            <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+            <div className="relative inset-0 flex justify-center ">
+                <img
+                    src="/gif/moonwalk.gif"
+                    alt="Theatre GIF"
+                    className="w-1/2 opacity-70 ml-20"
+                />
+            </div>
+            <div className="rounded-md flex flex-col items-center justify-center relative overflow-hidden mb-10">
                 <InfiniteMovingCards
                     items={testimonials}
                     direction="right"
                     speed="fast"
                 />
             </div>
-        </div>
+        </>
     );
 }
 
