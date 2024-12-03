@@ -30,46 +30,6 @@ const activities = [
     image: "https://example.com/hackathon.jpg", // Replace with actual image
     registrationLink: "https://example.com/register-hackathon",
   },
-  {
-    title: "Networking Event",
-    description: "An opportunity to meet and collaborate with industry professionals.",
-    date: "March 5, 2024",
-    time: "6:00 PM",
-    venue: "Skyline Cafe, Rooftop",
-    image: "https://example.com/networking-event.jpg", // Replace with actual image
-  },
-  {
-    title: "Networking Event",
-    description: "An opportunity to meet and collaborate with industry professionals.",
-    date: "March 5, 2024",
-    time: "6:00 PM",
-    venue: "Skyline Cafe, Rooftop",
-    image: "https://example.com/networking-event.jpg", // Replace with actual image
-  },
-  {
-    title: "Networking Event",
-    description: "An opportunity to meet and collaborate with industry professionals.",
-    date: "March 5, 2024",
-    time: "6:00 PM",
-    venue: "Skyline Cafe, Rooftop",
-    image: "https://example.com/networking-event.jpg", // Replace with actual image
-  },
-  {
-    title: "Networking Event",
-    description: "An opportunity to meet and collaborate with industry professionals.",
-    date: "March 5, 2024",
-    time: "6:00 PM",
-    venue: "Skyline Cafe, Rooftop",
-    image: "https://example.com/networking-event.jpg", // Replace with actual image
-  },
-  {
-    title: "Networking Event",
-    description: "An opportunity to meet and collaborate with industry professionals.",
-    date: "March 5, 2024",
-    time: "6:00 PM",
-    venue: "Skyline Cafe, Rooftop",
-    image: "https://example.com/networking-event.jpg", // Replace with actual image
-  },
 ];
 
 export function Upcoming() {
@@ -120,7 +80,7 @@ export function Upcoming() {
       </div>
 
       {/* Scrollable Container */}
-      <div ref={containerRef} className="flex overflow-x-hidden space-x-6 pb-4">
+      <div ref={containerRef} className="flex overflow-x-hidden space-x-6 py-4">
         {activities.map((activity, index) => (
           <EventCard
             key={index}
@@ -139,7 +99,7 @@ export function Upcoming() {
       <button
         onClick={() => scroll("left")}
         disabled={isLeftDisabled}
-        className={`absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none ${
+        className={`absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none ${
           isLeftDisabled ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
@@ -150,7 +110,7 @@ export function Upcoming() {
       <button
         onClick={() => scroll("right")}
         disabled={isRightDisabled}
-        className={`absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none ${
+        className={`absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none ${
           isRightDisabled ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
