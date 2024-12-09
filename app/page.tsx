@@ -1,19 +1,24 @@
-import { Achievment } from "@/components/Achievments";
+import { Achievement } from "@/components/Achievments";
+import Footer from "@/components/Footer";
 import { CSSMembers } from "@/components/CSSMembers";
 import Hero from "@/components/Hero";
-import { GlareCard } from "@/components/ui/GlareCard";
+import { Testimonials } from "@/components/Testimonials";
 import { Navbar } from "@/components/ui/Navbar";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
+import { Upcoming } from "@/components/Upcoming";
 
 export default function Home() {
   return (
-    <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 gap-80">
-      <div className="max-w-7xl w-full ">
-        <Navbar />
-        <Hero />       
-      </div>
-      <Achievment />
-    </main>
+    <>
+      <main className="relative flex justify-center items-center overflow-hidden flex-col mx-auto sm:px-10 px-5 ">
+        <div className="max-w-7xl w-full">
+          <Navbar />
+        </div>
+          <Hero />
+        <Upcoming />
+        <Achievement />
+        <Testimonials />
+      </main>
+      <Footer />
+    </>
   );
 }

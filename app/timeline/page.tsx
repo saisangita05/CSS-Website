@@ -1,5 +1,5 @@
 export default function Contact() {
     return (
-     <div>Samarpan</div>
+        <div>Timeline</div>
     );
-  }
+}
